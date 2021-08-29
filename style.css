@@ -1,0 +1,97 @@
+* {
+    font-size: 16px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+html {
+    min-height: 100vh;
+    min-width: 100vw;
+    overflow: hidden;
+}
+
+.main {
+    display: flex;
+    width: 80vw;
+    max-width: 80vw;
+    height: auto;
+    margin: 30vh auto;
+
+}
+
+.main div {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.main div img {
+    width: 150px;
+}
+
+.sedans {
+    background-color: hsl(31, 77%, 52%);
+
+}
+
+.suv {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.lux {
+    background-color: hsl(179, 100%, 13%);
+}
+
+h1 {
+    font-family: 'Big Shoulders Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3rem;
+    margin: 0.8rem 0;
+}
+
+p {
+    font-size: 1rem;
+    font-family: 'Lexend Deca';
+    font-style: normal;
+    font-weight: 400;
+    margin: 0.8rem 0;
+
+}
+
+button {
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 25px;
+    width: 150px;
+    min-width: 40%;
+    border-style: none;
+    font-family: 'Lexend Deca';
+    font-style: normal;
+    font-weight: 400;
+}
+
+.sedans button {
+    color: hsl(31, 77%, 52%);
+}
+
+.suv button {
+    color: hsl(184, 100%, 22%);
+}
+
+.lux button {
+    color: hsl(179, 100%, 13%);
+}
+
+
+@media only screen and (max-width: 700px) {
+    .main {
+        flex-direction: column;
+        overflow: scroll;
+        margin: 20vh auto;
+    }
+}
